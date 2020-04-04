@@ -1,0 +1,52 @@
+opts: &opts
+  variables:
+    geometry: margin=1in
+    fontfamily: palatino, cmtt
+    # titling: "droptitle=-60pt"
+    # links-as-notes: "true"
+  highlight: true
+  highlight-style: tango
+  smart: true
+  reference-docx: template/reference_docx.docx
+  columns: 80
+
+parallel-mode: true
+format-tree:
+  markdown: md
+  word: docx
+  pdf: pdf
+  latex: latex
+  web: html
+  json: json
+formats:
+  md:
+    format: markdown
+    opts: *opts
+  json:
+    format: json*
+    opts: *opts
+  pdf:
+    format: pdf
+    opts:
+      <<: *opts
+      template-path: template/lab.latex
+  latex:
+    format: latex*
+    opts:
+      <<: *opts
+      template-path: template/lab.latex
+  docx:
+    format: docx
+    opts: *opts
+  html:
+    format: html5*
+    opts: *opts
+cache: .pandoc-sync-cache
+
+# better format:
+# formats:
+#   - root: test/format
+#     format: markdown
+#     priority: 0
+#     opts: ...
+#
