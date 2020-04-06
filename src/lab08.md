@@ -40,6 +40,8 @@ by chaining them in different ways?
 1.  Are the resulting combinations *also* ohmic?
 2.  If so, can we infer the final resistance from the resistances of the
     individual components?
+3.  How does the resistance of the individual parts affect the flow through
+    them in the combined component?
 
 The materials will be the same as for the previous lab, except now you will be
 using two *identical* straws.
