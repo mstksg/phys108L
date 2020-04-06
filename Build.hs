@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --install-ghc runghc --resolver lts-14.27 --package shake --package pandoc-citeproc --package pandoc-crossref-0.3.4.2
+-- stack --install-ghc runghc --resolver lts-14.27 --package shake --package pandoc
 
 import Development.Shake
 import Development.Shake.FilePath
