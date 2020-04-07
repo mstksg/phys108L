@@ -21,12 +21,10 @@ the slope.
 In the last lab's procedure, we tested the idea that *straws* are ohmic
 devices: the current flow through them is directly proportional to the pressure
 you apply on one end.  We even directly calculated the resistance $R$ of three
-different types of straw: small, large, and clogged.
-
-Hopefully from that you were able to "feel" the idea of resistance and what it
-really "means".  It's not just something you can check with a multimeter and
-read off...it's a *proportionality constant* that reflects a real physical
-process you can experience.
+different types of straw: small, large, and clogged.  From it, hopefully you
+were able to appreciate that $R$ is more than just something you can check with
+a multimeter and read off...it's a *proportionality constant* that reflects a
+real physical process you can experience.
 
 In this week's lab, we are going to continue our straw resistance experiments
 by trying to see what happens to resistors if we *combine* them together.
@@ -52,7 +50,7 @@ The materials we will be using are:
     of paper marked off with even spaces, like a sheet of lined paper.  You can
     measure in any "unit" you want)
 
-![Materials needed](media/lab/lab07-materials-small.jpg){width=30em}
+![Materials needed](media/lab/lab08-materials.jpg){width=30em}
 
 Procedure
 =========
@@ -68,12 +66,18 @@ To set up:
     [football]: https://en.wikipedia.org/wiki/Paper_football
 
     <https://youtu.be/RTIwzFuczxw>
-    
+
     !["How to Make a Paper Flick Football (Origami) - Rob's World"](media/lab/lab08-footballvideo.jpg){width=20em}
+
+2.  Find your table surface.  Make sure that it is clean and dry.  It is very
+    important that it remains clean and dry throughout the course of the entire
+    experiment.
 
 2.  Place your measuring device on the table in front of you "vertically",
     measuring away from you.  The 0" side should be closest to you, and
     increasing direction should be away from you.
+
+    ![Setup for beginning of experiment](media/lab/lab08-ruler.jpg){width=20em}
 
 The procedure for each measurement will be:
 
@@ -88,7 +92,10 @@ The procedure for each measurement will be:
 > 3.  Blow into the straw directly downwards into the table, in front of the
 >     paper football, and measure how far the football slides away from you.
 >     Do this a few times until you are certain you can get a consistent
->     blowing pressure and so a consistent distance measurement.
+>     blowing pressure and so a consistent distance measurement.[^pressure]
+>
+>     ![*Angle for blowing.  You might want to adjust it for your own personal
+>     preference, to help you get a stable gust*](media/lab/lab08-blow.jpg){width=20em}
 >
 > 4.  One you feel you are consistent, record four distance measurements.
 >     This distance should be approximately proportional to square of the
@@ -100,7 +107,17 @@ The procedure for each measurement will be:
 >     consistent blowing rate, then we are essentially measuring
 >     inverse-resistance.  The farther the distance, the lower the resistance.
 
-[^current]: UUHMMMMmmMMMmmm is it *really* proportional to the square?  I think
+[^pressure]: If it is difficult for you to achieve a consistent distance with
+your paper football, it is ok to try other objects.  I've also had luck trying
+this with a AA battery, rolling away.  I feel like the battery is an especially
+ironic choice because we're using a real battery to simulate a circuit lab, but
+only as a dead weight and not for its actual electrical properties.  It's kind
+of like how I use my E&M textbook from college as base to put my laptop on top
+of.
+
+[laptop]: https://i.imgur.com/xYWWGSw.jpg
+
+[^current]: UMMMmmmm is it *really* proportional to the square?  I think
 it should be.  Let's think about it for a bit -- we know that there is a
 constant friction force slowing it down, so we have constant acceleration.
 Then $v^2 = 2 a\, \Delta x$, from that one kinematic equation or something.
@@ -108,9 +125,10 @@ And $E = \frac{1}{2} m v^2$.  Our air blows out at power $P = I^2 R$, so the
 energy imparted is $E = P\, \Delta t$.  This means that distance $\Delta x$ is
 proportional to $v^2$ ... which is proportional to energy $E$ ... which is
 proportional to power $P$ ... which is proportional to $I^2$ ... yeah that
-sounds right.  Yup this type of thinking is is pretty much what physicists do
-all day, if you were wondering what the life of a physicist is like.  Come join
-us :)
+sounds right.  Yup.  This should be true as long as you keep the blow time
+$\Delta t$ constant, and friction is independent of velocity.  By the way, this
+type of thinking is is pretty much what physicists do all day, if you were
+wondering what the life of a physicist is like.  Come join us :)
 
 Series and Parallel Chaining
 ----------------------------
@@ -141,18 +159,21 @@ different currents, and therefore different resistances.
 >     are consistent in your airflow, and then write down four distance
 >     measurements in `B2`, `C2`, `D2`, and `E2`.
 > 3.  Repeat step 2 with only a single straw this time.  Fill in `B3`, `C3`,
->     `D3`, and `E3`.  Try your best to maintain the same blowing force.
+>     `D3`, and `E3`.  Try your best to maintain the same blowing force, and
+>     ensure that the table surface is clean and dry the entire time.
 > 4.  Repeat step 2 with two straws "in parallel": take both straws, place them
->     side-by-side (like a *[pan flute][flute]*), and blow through them
+>     side-by-side (like a *[pan flute][flute]*,
+>     <https://en.wikipedia.org/wiki/Pan_flute>), and blow through them
 >     together.  Fill in `B4`, `C4`, `D4`, and `E4`.  Again, try your best to
->     maintain the same blowing force for all of step 2, 3, and 4.
+>     maintain the same blowing force for all of step 2, 3, and 4, as well as a
+>     clean and dry table surface.
 
 [flute]: https://en.wikipedia.org/wiki/Pan_flute
 
 After filling in the above cells with data, perform the following analysis.
 
 > **ANALYSIS**
-> 
+>
 > 1.  What do you think the resistance of two "series" combined identical
 >     resistors should be, compared to the single resistor?  Do `G2` and `G3`
 >     match this expectation?
@@ -169,6 +190,11 @@ After filling in the above cells with data, perform the following analysis.
 >     *Hint*: Use the same logic as the previous question, but for parallel
 >     resistors instead of series resistors.
 >
+> 3.  In this experiment, the source of the pressure is your lungs and
+>     diaphragm.  Assuming you can supply a constant pressure for the period of
+>     blowing time, do your lungs behave more like a battery or a capacitor, in
+>     this case?
+>
 > 3.  Explain any potential sources of error between your expected and actual
 >     measured relationships.
 
@@ -181,15 +207,16 @@ straws with the paper towel in the same manner done for Lab 7[^towel].  For the 
 three measurements, we will be blowing both the unclogged and clogged straws
 "in parallel".
 
-[^towel]: Please don't use tearable plastic wrap, if you used it for Lab 7.
-There is probably some risk of accidental inhalation.
+[^towel]: Please don't use tearable plastic wrap, if you used it for Lab 7
+instead of a paper towel.  There is probably some risk of accidental
+inhalation.
 
 > **ACTIVITY**
 >
 > Continue on the same spreadsheet you used for the previous section.
 >
 > 1.  Use both your unclogged and clogged straws side-by-side "in parallel",
->     like [pan flute][flute], same as step 4 of the previous section.
+>     like *[pan flute][flute]*, same as step 4 of the previous section.
 >     "long straw" that is twice as long as your original straw...and is
 >     essentially chaining the two straws *series*.  Make a measurement while
 >     blowing through both straws, like before.  Fill in `B5`, `C5`, `D5`, and
@@ -206,7 +233,7 @@ There is probably some risk of accidental inhalation.
 After filling in the table, perform the following analysis.
 
 > **ANALYSIS**
-> 
+>
 > 1.  You know that the clogged straw has more resistance than the unclogged
 >     one, from the results of Lab 7.  Knowing this and that our ohmic straws
 >     follow $I = \frac{1}{R} V$, do you think the clogged or the unclogged
@@ -246,10 +273,26 @@ feel for how pieces combine is a core piece of "getting" circuits.
 > is fixed.  Use the language of current, resistance, and pressure
 > (voltage).[^test]
 
-[^test]: If you test this out, you actually might find that toilets and showers
-can flush independently without interfering with each other in the real world.
-Must be that physics lab left a lasting impression on an innovative plumber who
-set out to "fix" the circuitry.
+[^test]: This is a common story passed down from physics professors to
+    students.  I remember learning this from my E&M professor (Dr. Elizabeth
+    Jenkins), and now I am passing down the torch to you.  Maybe one
+    day you, dear student, will too pass down this tradition.
+
+    *However*, if you actually test this story out, you actually might find
+    that many modern toilets and showers can flush independently without
+    interfering with each other.  Must be that physics lab left a lasting
+    impression on an innovative plumber who set out to "fix" the circuitry.  I
+    found this out the hard way when I was at a party trying to impress people
+    with my physics knowledge.  I told them about the shower-toilet story that
+    I learned the previous semester, and we went to the apartment's bathroom so
+    I could show off. However the shower wasn't affected at all by the toilet
+    flushing, contrary to my professor's explanation.
+
+    Why am I telling you this?  Firstly, to remind you that sometimes reality
+    is a little different than the idealized model we talk about in this class.
+    Secondly, to maybe prevent you from making the same mistake I did at that
+    party many years ago.  Thirdly, to remind you not to ever trust physics
+    professors.
 
 Manifest
 ========
