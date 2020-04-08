@@ -305,7 +305,7 @@ As a reminder, here is the expected lab report structure:
 4.  Procedure
 5.  Analysis
     *   Series and Parallel Chaining
-        *   Questions 1, 2, 3
+        *   Questions 1, 2, 3, 4
     *   Parallel Current
         *   Questions 1, 2
     *   Pasted data table
