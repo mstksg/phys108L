@@ -228,45 +228,99 @@ the following video about discharging a "super capacitor" with capacitance $500
 
 !["Super capacitor 500F 2.7V Charge and Discharge Testing"](media/lab/lab09-super.jpg){width=20em}
 
-"Super capacitor" is a fitting name.  At $500 \mathrm{F}$, it's actually a
-*million* times as high capacitance as the start capacitor we saw at the
-beginning of this lab.  Luckily, its maximum voltage is much smaller ($2.7
-\mathrm{V}$, or about AA battery's worth).
+"Super capacitor" is a fitting name.  At $500 \mathrm{F}$, its capacitance is
+actually a *million* times higher than that of the start capacitor we saw at
+the beginning of this lab.  Luckily, its maximum voltage is much smaller ($2.7
+\mathrm{V}$, or about two AA battery's worth).
 
 Again, feel free to watch through the whole video and the set-up --- however,
 the relevant part for this lab begins at `4m20s`, then the discharge begins
 happening.
 
-> **QUESTION 2.1**: The capacitor starts discharging with $V_0 = 2.7
-> \mathrm{V}$.  *(a)* How much voltage $V_f$ is across it after 10 minutes of
+> **QUESTION 3.1**: The capacitor starts discharging with $V_0 = 2.7
+> \mathrm{V}$.[^coulombs]  *(a)* How much voltage $V_f$ is across it after 10
+> minutes of discharge?  *(b)* Using $V_f = V_0 e^{- \frac{\Delta t}{R C}}$,
+> what can we estimate is the resistance $R$ of the motor in the circuit?
+>
+> **QUESTION 3.2**: *(a)* How much voltage $V_f$ is across it after 20 minutes of
 > discharge?  *(b)* Using $V_f = V_0 e^{- \frac{\Delta t}{R C}}$, what can we
 > estimate is the resistance $R$ of the motor in the circuit?
 >
-> **QUESTION 2.2**: *(a)* How much voltage $V_f$ is across it after 20 minutes of
-> discharge?  *(b)* Using $V_f = V_0 e^{- \frac{\Delta t}{R C}}$, what can we
-> estimate is the resistance $R$ of the motor in the circuit?
->
-> **QUESTION 2.3**: After discharging half of the charge to reach
+> **QUESTION 3.3**: After discharging half of the charge to reach
 > $V_f = 1.4 \mathrm{V}$, the experimenter stops the timer and ends the
 > experiment.  *(a)* How much time $\Delta t$ elapses to reach the halfway
 > point?  *(b)* Using $V_f = V_0 e^{- \frac{\Delta t}{R C}}$, what can we
 > estimate is the resistance $R$ of the motor in the circuit?
 >
-> **QUESTION 2.4**: In *2.1*, *2.2* and *2.3*, we ended up with three different
+> **QUESTION 3.4**: In *3.1*, *3.2* and *3.3*, we ended up with three different
 > estimations of the motor's resistance $R$.  Are your estimates all the same?
 > What would that say about whether or not the motor is "ohmic"?
->
-> **QUESTION 2.5**: In the description of the youtube video, the experimenter
-> claims "You can replace the battery by\,\,  this super capacitor".  This is a
-> bold claim.  Let us investigate whether or not it is justified.  Remember
-> that the main difference in application a battery and capacitor is that a
-> battery is meant to provide constant voltage.
->
-> *(a)* Under what sort of $\Delta t$ (how long you use the battery for) is
-> this claim justified?  How would increasing/decreasing the usage time affect
-> the usefulness as a battery?  *(b)* Under what sort of $R$ (the resistance of
-> the circuit you are driving) is this claim justified?  How would
-> increasing/decreasing $R$ affect the usefulness as a battery?
 
-[^coulombs]: That's a stored charge of $Q_0 = C V_0 = 500 \times 2.7 = 1350 \mathrm{C}$
-    --- about 1.4 kilocoulombs.
+[^coulombs]: That's a stored charge of $Q_0 = C V_0 = 500 \times 2.7 = 1350 \mathrm{C}$ --- about 1.4 *kilo*-coulombs.
+
+In the description of the youtube video, the experimenter
+claims "*You can replace the battery by  this super capacitor*".  This is a
+bold claim.  Let us investigate whether or not it is justified.  Remember
+that the main difference in application a battery and capacitor is that a
+battery is meant to provide constant voltage.
+
+> **QUESTION 3.5**: *(a)* Under what sort of $\Delta t$ (how long you use the
+> battery for) is this claim justified?  How would increasing/decreasing the
+> usage time affect the usefulness as a battery?  *(b)* Under what sort of $R$
+> (the resistance of the circuit you are driving) is this claim justified?  How
+> would increasing/decreasing $R$ affect the usefulness as a battery?
+
+Conclusion
+==========
+
+The combination of *R* circuits and *C* circuits may seem like a benign mixing
+at first.  However, such a simple addition unexpectedly changes the game
+completely.  For the first time in Physics 108, we have stepped into the world
+of *time*, and time-dependence.
+
+Some of you might have noticed that time was completely absent from all of the
+other major concepts so far, which is a bit unusual considering that the first
+section of Physics 107 completely revolves around time, in kinematics.
+
+Well, it took us a while, but our dear friend [Father Time][] is back ... and
+here to stay, for the rest of the semester.
+
+[Father Time]: https://www.youtube.com/watch?v=Rq5jahYjrcc
+
+Hopefully by the end of this lab, you are able to understand the interaction
+between resistors and capacitors and embrace this paradigm shift.  May it also
+prepare you for the new types of problems we will be facing ahead!
+
+> **REFLECTION**
+>
+> In lab 7, our voltage source came from a bag of water.  We discussed in class
+> that the bag behaves more like a capacitor than a battery, because its
+> pressure (voltage) changes over time as the water level drops.
+>
+> That means that as long as $Q = C V$, then the flow should also decay
+> exponentially, as $I(t) = I_0 e^{- \frac{t}{R C}}$.
+>
+> What *does* $Q = C V$ mean, anyway, for bags of water?  And is it true for
+> our bags of water in lab 7?  What sort of conditions or changes would make it
+> true or not true?
+>
+> *Hint*: It might be easier to see if you re-write it as $V =
+> \frac{1}{C} Q$.  Identify what $Q$ and $V$ are, and then think about what
+> $C$ must mean, physically.
+
+Manifest
+========
+
+As a reminder, here is the expected lab report structure:
+
+1.  Title
+2.  Abstract
+3.  Introduction
+4.  Procedure
+5.  Analysis
+    *   Questions 1.1, 1.2, 1.3, 1.4
+    *   Question 2.1 (a,b), 2.2, 2.3
+    *   Question 3.1 (a,b), 3.2 (a,b), 3.3 (a,b), 3.4, 3.5 (a,b)
+    *   Reflection
+6.  Conclusion
+
