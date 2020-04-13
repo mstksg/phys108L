@@ -112,8 +112,7 @@ your paper football, it is ok to try other objects.  I've also had luck trying
 this with a AA battery, rolling away.  I feel like the battery is an especially
 ironic choice because we're using a real battery to simulate a circuit lab, but
 only as a dead weight and not for its actual electrical properties.  It's kind
-of like how I use my E&M textbook from college as base to put my laptop on top
-of.
+of like how I use my E&M textbook from college [as base for my laptop][laptop].
 
 [laptop]: https://i.imgur.com/xYWWGSw.jpg
 
