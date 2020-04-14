@@ -139,8 +139,8 @@ If you plug in $t = R C$ for all of the above equations, you'll get:
 
 $$
 \begin{align}
-I(R C) & = I_0 / e
-V(R C) & = V_0 / e
+I(R C) & = I_0 / e \\
+V(R C) & = V_0 / e \\
 Q(R C) & = Q_0 / e
 \end{align}
 $$
@@ -310,9 +310,10 @@ prepare you for the new types of problems we will be facing ahead!
 >
 > What *does* $Q = C V$ mean, anyway, for bags of water?  Is it true for our
 > bags of water in lab 7?  Based on your answer, do you think the water drained
-> out of your bags following truly exponential decay?
+> out of your bags following truly exponential decay?   How does this agree
+> with the behavior you actually observed?
 >
-> *Hint*: It might be easier to see what it means if you re-write it as $V =
+> *Hint*: It might be easier to see what $Q = C V$  means if you re-write it as $V =
 > \frac{1}{C} Q$.  Identify what $Q$ and $V$ are, and then think about what $C$
 > must mean, physically.
 
