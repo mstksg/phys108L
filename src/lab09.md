@@ -205,8 +205,8 @@ The x axis here is time, and each "square" on the grid is a duration of $40
 > Using $Q_f = Q_0 e^{- \frac{\Delta t}{\tau}}$, can you solve for $\tau$, the time
 > constant?
 >
-> *Hint*: We don't know $Q_0$ nor $Q_f$, but use $Q_f = \frac{1}{2} Q_0$ and
-> see if things cancel out.
+> *Hint*: We don't know $Q_0$ nor $Q_f$, but use $Q_f = \frac{1}{2} Q_0$
+> (because $V_f = \frac{1}{2} V_0$) and see if things cancel out.
 >
 > **QUESTION 2.3**:  In the previous problem, you solved for $\tau$, the "time
 > constant".  In RC circuits, $\tau = R C$.  The capacitance of the capcitor
