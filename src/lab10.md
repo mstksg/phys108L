@@ -238,20 +238,18 @@ wire being curled.
 
 Then, take a look at the following pictures of three of my sad solenoids.
 
+![Paperclip solenoids](media/lab/lab10-solenoids.jpg){width=30em}
+
 > **ANALYSIS**
 >
 > 1.  Assume that, attached to a AA battery, their current draw is $50
 >     \mathrm{mA}$ and the length of the coiled parts are all 4 inches.
 >
->     a.  What is the strength of the magnetic field inside solenoid A, when current
->         is flowing from a AA battery?
->     a.  What is the strength of the magnetic field inside solenoid B, when current
->         is flowing from a AA battery?
->     a.  What is the strength of the magnetic field inside solenoid C, when current
->         is flowing from a AA battery?
-> 2.  With a AA battery, is there a way to generate a stronger electromagnet
->     (that is, a solenoid with a stronger magnetic field), without needing to go to
->     the store to buy a longer paperclip?
+>     Find the strength of the magnetic field inside solenoids A, B, and C
+>     (each, separately), when current is flowing from a AA battery.
+> 2.  Using this same paperclip and this same battery, is there a way to
+>     generate a stronger electromagnet (that is, a solenoid with a stronger
+>     magnetic field) by changing how I shape it?
 > 3.  Assuming you place solenoid C right at your magnetic sensor, how much
 >     current would you need to draw from your battery in order to create a
 >     measurable B field, of around $100 \mathrm{\mu T}$?
