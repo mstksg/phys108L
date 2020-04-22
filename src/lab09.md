@@ -65,7 +65,7 @@ channel *Tech StudyCell*:
 !["How to Discharge Capacitor safely with resistor"](media/lab/lab09-discharge.jpg){width=20em}
 
 In this video, the experimenter handles a particularly chonky capacitor with
-capacitance $500 \mathrm{\mu F}$.[^start]  This capacitor is much bigger than
+capacitance $30 \mathrm{\mu F}$.[^start]  This capacitor is much bigger than
 any we have ever observed in class or in labs, but it is not uncommon in
 industrial electronics.  You most likely have a similar one in your home if you
 have an air conditioning unit, motorized gate, or jacuzzi.
@@ -234,9 +234,9 @@ the following video about discharging a "super capacitor" with capacitance $500
 !["Super capacitor 500F 2.7V Charge and Discharge Testing"](media/lab/lab09-super.jpg){width=20em}
 
 "Super capacitor" is a fitting name.  At $500 \mathrm{F}$, its capacitance is
-actually a *million* times higher than that of the start capacitor we saw at
-the beginning of this lab.  Luckily, its maximum voltage is much smaller ($2.7
-\mathrm{V}$, or about two AA battery's worth).
+actually about twenty *million* times higher than that of the start capacitor
+we saw at the beginning of this lab.  Luckily, its maximum voltage is much
+smaller ($2.7 \mathrm{V}$, or about two AA battery's worth).
 
 Again, feel free to watch through the whole video and the set-up --- however,
 the relevant part for this lab begins at `4m20s`, then the discharge begins
